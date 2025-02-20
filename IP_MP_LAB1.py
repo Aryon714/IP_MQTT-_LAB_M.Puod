@@ -1,12 +1,10 @@
-import json;
-
-a = {
-    "firstName":"Martynas",
-    "lastName":"Puodziunas",
-    "city":"Vilnius",
+a = '{"firstName":"Martynas","lastName":"Puodziunas","city":"Vilnius"}'
+b={
     "age":"24"
 }
 
-b = json.dumps(a)
+c = json.loads(a)
 
-print(b)
+c.update(b)
+
+print(c)
